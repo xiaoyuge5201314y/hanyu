@@ -1,0 +1,197 @@
+// 响应式
+@import "common/var";
+// 公共样式
+@import "common/common";
+// 全屏导航栏
+@import "common/navbar";
+// 顶部导航栏
+@import "common/nav";
+// 通用样式
+@import "common/info";
+
+#product {
+    width: 100%;
+    font-size: 14rem/@baseFontSize;
+    overflow: hidden;
+    background-color: #FCFAF5;
+    .title();
+
+    h2 {
+        margin-top: 40rem/@baseFontSize  !important;
+    }
+
+    ul {
+        width: 100%;
+        margin-top: -10rem/@baseFontSize;
+        overflow: hidden;
+
+        li {
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20rem/@baseFontSize;
+
+            >img {
+                position: relative;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 336rem/@baseFontSize;
+                object-fit: cover;
+            }
+
+            >div {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 30rem/@baseFontSize 20rem/@baseFontSize;
+                width: 245rem/@baseFontSize;
+                height: 315rem/@baseFontSize;
+                background-color: #FFFAEC;
+                border-radius: 5rem/@baseFontSize;
+
+                h3 {
+                    color: #FF8A00;
+                    font-size: 16rem/@baseFontSize;
+                    font-weight: 700;
+                }
+
+                div {
+                    margin: 10rem/@baseFontSize 0 20rem/@baseFontSize;
+                    width: 100%;
+                    height: 0.1rem/@baseFontSize;
+                    background-color: #aaa;
+                }
+
+                p {
+                    font-size: 14rem/@baseFontSize;
+                    text-align: justify;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 12;
+                    font-weight: 400;
+                }
+
+                a {
+                    display: block;
+                    margin: 20rem/@baseFontSize auto 30rem/@baseFontSize;
+                    width: 97rem/@baseFontSize;
+                    height: 29rem/@baseFontSize;
+                    border: 1rem/@baseFontSize solid #a0a0a0;
+                    color: #333;
+                    line-height: 29rem/@baseFontSize;
+                    border-radius: 30rem/@baseFontSize;
+                    text-align: center;
+                    font-size: 12rem/@baseFontSize;
+                    font-weight: 400;
+                    font-family: '宋体';
+                }
+            }
+        }
+    }
+
+    span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30rem/@baseFontSize;
+        line-height: 29rem/@baseFontSize;
+    }
+}
+
+#product2 {
+    background-color: #FCFAF5;
+    overflow: hidden;
+
+    .tit {
+        .title();
+
+        >img {
+            padding: 20rem/@baseFontSize;
+            padding-top: 0;
+            margin-top: 30rem/@baseFontSize;
+            width: 100%;
+            display: block;
+            height: 200rem/@baseFontSize;
+            object-fit: cover;
+        }
+    }
+
+    p {
+        padding: 20rem/@baseFontSize;
+        font-size: 12rem/@baseFontSize;
+        color: #666;
+        letter-spacing: 1rem/@baseFontSize;
+        line-height: 20rem/@baseFontSize;
+        text-align: justify;
+
+        em {
+            font-style: normal;
+            font-weight: 700;
+            color: #000;
+        }
+    }
+
+
+    .jianshang {
+        background-color: #fff;
+        overflow: hidden;
+    }
+
+    ul {
+        li {
+            padding: 10rem/@baseFontSize 20rem/@baseFontSize;
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 180rem/@baseFontSize;
+                display: block;
+            }
+        }
+    }
+
+    .bg {
+        width: 100%;
+        margin-top: 30rem/@baseFontSize;
+        background: url("http://www.hysy0578.com/template/hysy/wap/img/around.png") no-repeat center/cover;
+        height: 85rem/@baseFontSize;
+        color: #fff;
+        text-align: center;
+        line-height: 85rem/@baseFontSize;
+        font-size: 16rem/@baseFontSize;
+        font-weight: 700;
+        letter-spacing: 2rem/@baseFontSize;
+    }
+    footer{
+        position: relative;
+        width: 100%;
+        background-color: #FCFAF5;
+        padding: 35rem/@baseFontSize 20rem/@baseFontSize 165rem/@baseFontSize;
+        div{
+            width: 300rem/@baseFontSize;
+            height: 180rem/@baseFontSize;
+            img{
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        p{
+            position: absolute;
+            right:20rem/@baseFontSize;
+            top:105rem/@baseFontSize;
+            display: block;
+            width: 255rem/@baseFontSize;
+            padding: 25rem/@baseFontSize 35rem/@baseFontSize;
+            line-height: 14rem/@baseFontSize;
+            background-color: #C6A47F;
+            color:white;
+            font-size: 12rem/@baseFontSize;
+            box-shadow: 2px 0 10px #C6A47F;
+        }
+    }
+}

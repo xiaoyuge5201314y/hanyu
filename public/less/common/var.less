@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+// 响应式设备宽度:4/5, 6/7/8/x ,6s/7s/8s
+@adapterDeviceList :320px,
+375px,
+414px;
+
+// 默认字体大小
+@baseFontSize: 100px;
+
+// 设计稿宽度
+@psdWidth: 375px;
+
+@index: 1;
+@len :length(@adapterDeviceList);
+
+.font(@index);
+
+.font(@aaa) when (@aaa<=length(@adapterDeviceList)) {
+    @media (min-width:extract(@adapterDeviceList, @aaa)) {
+        html {
+            //字体大小 实际尺寸/设计稿尺寸 * 默认大小
+            font-size: extract(@adapterDeviceList, @aaa)/@psdWidth*@baseFontSize;
+        }
+    }
+    .font(@aaa + 1);
+}

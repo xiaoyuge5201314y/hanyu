@@ -1,0 +1,59 @@
+@fz: 1rem/@baseFontSize;
+
+.nav {
+    height: 50rem/@baseFontSize;
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 53*@fz;
+        background: url("http://www.hysy0578.com/template/hysy/wap/img/logo.png") no-repeat center/78*@fz;
+        background-color: #fff;
+        z-index: 999;
+
+        a {
+            position: absolute;
+            display: block;
+            right: 16*@fz;
+            top: 13*@fz;
+
+            span {
+                height: 100%;
+                display: block;
+                font-size: 27*@fz;
+                color: #000;
+            }
+
+        }
+    }
+
+}
+.bg-banner{
+    display: block;
+    width: 100%;
+    height: 170rem/@baseFontSize;
+    object-fit: cover;
+}
+.change {
+    width: 100%;
+    font-size: 12rem/@baseFontSize;
+
+    padding: 20rem/@baseFontSize 0 20rem/@baseFontSize;
+
+    div {
+        width: 100%;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            width: 27%;
+            color: #666;
+
+            &.now {
+                color: orange;
+            }
+        }
+    }
+}
